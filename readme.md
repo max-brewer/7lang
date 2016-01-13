@@ -6,4 +6,11 @@ Not it's time to learn some Io. It seems to me that this would be much better ac
 
 So far, I've completed the Ruby tasks. Hopefully they're all saved, I'll check that later. I've also completed some of the Io tasks. The rest will be added as and when they are completed.
 
+## Languages
++ Ruby
++ [Io](/Io/notes.md)
+
+## License
+
+
 The contents of this repository are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license.](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode). If you need to use it commercially for some reason (I can't imagine why you would) then make an issue and ask me.
