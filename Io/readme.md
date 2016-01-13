@@ -12,11 +12,11 @@ This is a very nice explaination of prototyping. It is also very handy how the c
 
 ### Answers:
 [Test framework](https://github.com/sermoa/7languages7weeks/blob/master/week2-io/testFramework.io) by [Aimee Rivers (sermoa)](https://github.com/sermoa) licensed under [BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode)
-+ [Io is strongly typed](/strongTyping.test.io).
-+ [0 is true in Io, "" is true and mil is false](/truthy.test.io).
++ [Io is strongly typed](./strongTyping.test.io).
++ [0 is true in Io, "" is true and mil is false](./truthy.test.io).
 + You can tell what slots a prototype supports by asking. (e.g. `Object proto slotNames`)
 + = assigns to a slot := creates and assigns to a slot, and ::= creates a new slot with a setter and asigns it.
 
 ### Done:
 + Run an Io program from a file.
-+ [Execute the code in a slot given its name](/executeSlotByName.io)
++ [Execute the code in a slot given its name](./executeSlotByName.io)

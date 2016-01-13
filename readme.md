@@ -7,8 +7,8 @@ Not it's time to learn some Io. It seems to me that this would be much better ac
 So far, I've completed the Ruby tasks. Hopefully they're all saved, I'll check that later. I've also completed some of the Io tasks. The rest will be added as and when they are completed.
 
 ## Languages
-+ Ruby
-+ [Io](/Io/notes.md)
++ [Ruby](/ruby)
++ [Io](/Io)
 
 ## License
 
