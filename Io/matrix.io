@@ -24,6 +24,29 @@ Matrix == := method(other, self underlyingList == other underlyingList)
 Matrix toString := method(
 	self underlyingList map(row, row join(", ")) join("\n")
 )
+Matrix fromString := method(string, 
+	result := Matrix clone
+
+	result underlyingList := string split("\n") map(row, 
+		row split(",") map(cell, 
+			cell asNumber))
+
+	return result
+)
+Matrix toFile := method(fileName,
+	file := File with(fileName)
+	file openForUpdating
+	file write(self toString)
+	file close
+)
+Matrix fromFile := method(fileName,
+	file := File with(fileName)
+	file openForReading
+	content := file readLines join("\n") 
+	file close
+	self fromString(content)
+)
+
 
 doFile("testFramework.io")
 
@@ -67,4 +90,11 @@ matrix5 set(0,1,3)
 matrix5 set(1,1,4)
 matrix5 toString shouldEqual("1, 2\n3, 4")
 
+# matrix fromString creates and equivalent matrix, ignores spaces.
+Matrix fromString("1,2\n 3, 4") shouldEqual(matrix5)
+
+# write to a file and read from it again
+fileName := "matrix.txt"
+matrix5 toFile(fileName)
+Matrix fromFile(fileName) shouldEqual(matrix5)
 
