@@ -1,10 +1,9 @@
 #!/usr/local/bin/io
 
 Builder := Object clone
-Builder depth := 0
 Builder forward := method(
 	indentation := call coroutine callStack select(layer,
-		layer sender == Builder) map(depth, "  ") join
+		layer sender == self) map(depth, "  ") join
 	
 	writeln(indentation, "<", call message name, ">")
 	call message arguments foreach(argument,
