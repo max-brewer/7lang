@@ -124,3 +124,13 @@ Once there are no disks left to move, you stop trying to move them.
 
 Because in prolog, the concept of truth is equivalent to being provable using the facts presented in the knowledge base, negation can have counter-intuitive results. The logical space of prolog is a /Closed World/ where anything not proven by a rule is automatically considered false. For this reason negation will be very truth happy.
 
+#### Done
+##### [Reverse a list](./list_reversal.pl).
+The reverse of a list is equivalent to appending its head to the reverse of its tail.
+##### [Find the smallest element of a list](./smallest.pl)
+The smallest element of a list is the only element for a single element list. It is outherwise equivalent to the smaller out of the head and the smallest element of a tail.
+##### [Sort the elements of a list](./sort.pl)
+This one took me quite a while to get my head around. I couldn't think of a good way to keep track of what had already been sorted. In the end I chose to have a great many variables to keep track of everything.
+
+Having now looked on [Rosetta Code](http://rosettacode.org/wiki/Sorting_algorithms/Bubble_sort#Prolog) I see that the version there is also rather inelegant. [The quick sort](http://rosettacode.org/wiki/Sorting_algorithms/Quicksort#Prolog), however, is much nicer.
+
